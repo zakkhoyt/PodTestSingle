@@ -7,16 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "RestKit.h"
+
 
 @interface ViewController ()
-
+@property (nonatomic, strong) RKObjectMapping *mapping;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.mapping = [RKObjectMapping new];
 }
 
 - (void)didReceiveMemoryWarning {
